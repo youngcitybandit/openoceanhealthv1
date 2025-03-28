@@ -29,7 +29,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
     <div className="flex items-end gap-1">
       {showIcon && (
         <Palmtree 
-          className={`${iconColor} -mb-3`} 
+          className={iconColor} 
           size={sizeClasses.icon} 
           strokeWidth={2}
         />
