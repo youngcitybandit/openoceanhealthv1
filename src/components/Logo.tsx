@@ -15,18 +15,18 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return { text: 'text-xl', icon: 24 }; // Increased from 20
+        return { text: 'text-xl', icon: 28 }; // Increased from 24
       case 'lg':
-        return { text: 'text-3xl', icon: 36 }; // Increased from 32
+        return { text: 'text-3xl', icon: 42 }; // Increased from 36
       default: // md
-        return { text: 'text-2xl', icon: 28 }; // Increased from 24
+        return { text: 'text-2xl', icon: 34 }; // Increased from 28
     }
   };
   
   const sizeClasses = getSizeClasses();
   
   return (
-    <div className="flex items-end gap-1">
+    <div className="flex items-end gap-0.5">
       {showIcon && (
         <Palmtree 
           className={iconColor} 
