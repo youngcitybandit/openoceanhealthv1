@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building, Shield, Briefcase } from 'lucide-react';
+import { PalmTree } from 'lucide-react';
 
 interface LogoProps {
   variant?: 'default' | 'white';
@@ -10,6 +10,7 @@ interface LogoProps {
 
 const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) => {
   const textColor = variant === 'white' ? 'text-white' : 'text-brand-blue';
+  const iconColor = variant === 'white' ? 'text-white' : 'text-brand-teal';
   
   const getSizeClasses = () => {
     switch (size) {
@@ -27,18 +28,11 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center gap-2">
       {showIcon && (
-        <div className="relative">
-          <Shield 
-            className="text-brand-blue" 
-            size={sizeClasses.icon} 
-            strokeWidth={2}
-          />
-          <Building 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-brand-teal" 
-            size={sizeClasses.icon * 0.6} 
-            strokeWidth={2.5}
-          />
-        </div>
+        <PalmTree 
+          className={iconColor} 
+          size={sizeClasses.icon} 
+          strokeWidth={2}
+        />
       )}
       <span className={`font-bold ${sizeClasses.text} ${textColor} tracking-tighter`}>PHS</span>
     </div>
