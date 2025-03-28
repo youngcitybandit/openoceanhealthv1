@@ -34,10 +34,10 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <a href="/" className="text-2xl font-bold text-white">SMBSimplify</a>
+              <a href="/" className="text-2xl font-bold text-white">PHS</a>
             </div>
             <div className="text-gray-400 text-sm">
-              &copy; {currentYear} SMBSimplify. All rights reserved.
+              &copy; {currentYear} PHS. All rights reserved.
             </div>
           </div>
         </div>

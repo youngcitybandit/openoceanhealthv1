@@ -23,7 +23,7 @@ const Navigation = () => {
     <nav className="w-full py-4 bg-white/90 backdrop-blur-sm fixed top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="text-2xl font-bold text-brand-blue">SMBSimplify</a>
+          <a href="/" className="text-2xl font-bold text-brand-blue">PHS</a>
         </div>
         
         {/* Desktop Navigation */}
