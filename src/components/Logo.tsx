@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PalmTree } from 'lucide-react';
+import { PalmTree as TreePalm } from 'lucide-react';
 
 interface LogoProps {
   variant?: 'default' | 'white';
@@ -28,7 +28,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center gap-2">
       {showIcon && (
-        <PalmTree 
+        <TreePalm 
           className={iconColor} 
           size={sizeClasses.icon} 
           strokeWidth={2}
