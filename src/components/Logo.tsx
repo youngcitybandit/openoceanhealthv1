@@ -24,7 +24,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center">
       <img 
-        src="/lovable-uploads/7049c797-8b98-4504-b945-d1b136b06a33.png" 
+        src="/lovable-uploads/68491041-500d-4792-8957-42bf64decf38.png" 
         alt="PHS Staffing Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
