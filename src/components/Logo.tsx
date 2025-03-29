@@ -8,16 +8,14 @@ interface LogoProps {
 }
 
 const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) => {
-  const textColor = variant === 'white' ? 'text-white' : 'text-brand-blue';
-  
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return { logo: 'h-8', text: 'text-xl' };
+        return { logo: 'h-8' };
       case 'lg':
-        return { logo: 'h-12', text: 'text-3xl' };
+        return { logo: 'h-12' };
       default: // md
-        return { logo: 'h-10', text: 'text-2xl' };
+        return { logo: 'h-10' };
     }
   };
   
@@ -26,7 +24,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center">
       <img 
-        src="/lovable-uploads/5a24503f-4955-4bc4-b6ba-29436a1b5a82.png" 
+        src="/lovable-uploads/7049c797-8b98-4504-b945-d1b136b06a33.png" 
         alt="PHS Staffing Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
