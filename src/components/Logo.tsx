@@ -23,7 +23,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   const sizeClasses = getSizeClasses();
   
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-2">
       <img 
         src="/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png" 
         alt="Open Ocean Health Logo" 
