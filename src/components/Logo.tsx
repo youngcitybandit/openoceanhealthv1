@@ -11,11 +11,11 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return { logo: 'h-10' }; // Increased from h-8
+        return { logo: 'h-10' }; 
       case 'lg':
-        return { logo: 'h-16' }; // Increased from h-12
+        return { logo: 'h-16' }; 
       default: // md
-        return { logo: 'h-12' }; // Increased from h-10
+        return { logo: 'h-12' }; 
     }
   };
   
@@ -24,7 +24,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center">
       <img 
-        src="/lovable-uploads/92ee5f40-435c-4afa-ae1b-9c6af3dca53d.png" 
+        src="/lovable-uploads/df92cd1b-1019-4d99-86c4-d924e8ad6523.png" 
         alt="Open Ocean Health Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
