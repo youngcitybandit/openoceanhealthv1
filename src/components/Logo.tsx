@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Button } from '@/components/ui/button';
 
 interface LogoProps {
   variant?: 'default' | 'white';
@@ -22,12 +23,18 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   const sizeClasses = getSizeClasses();
   
   return (
-    <div className="flex items-center">
+    <div className="flex items-center gap-4">
       <img 
         src="/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png" 
         alt="Open Ocean Health Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
+      <Button 
+        variant="ghost" 
+        className={`text-lg font-medium ${variant === 'white' ? 'text-white' : 'text-gray-800'}`}
+      >
+        Open Ocean Health
+      </Button>
     </div>
   );
 };
