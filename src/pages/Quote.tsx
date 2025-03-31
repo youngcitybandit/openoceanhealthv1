@@ -2,7 +2,6 @@
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import ChatBox from '@/components/ChatBox';
 
 const Quote = () => {
   return (
@@ -16,12 +15,11 @@ const Quote = () => {
             Our team will review your information and get back to you with competitive options.
           </p>
           <p className="text-gray-600 mb-10">
-            Need immediate assistance? Chat with our bot using the chat button in the bottom right corner.
+            Need immediate assistance? Contact our team at (800) 123-4567.
           </p>
         </div>
       </main>
       <Footer />
-      <ChatBox />
     </div>
   );
 };
