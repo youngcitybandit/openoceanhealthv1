@@ -14,12 +14,12 @@ const benefitsData = [
     description: "Small businesses qualify for substantial tax benefits when offering healthcare through our platform."
   },
   {
-    icon: <Calendar size={32} className="text-brand-pink" />,
+    icon: <Calendar size={32} className="text-brand-blue" />,
     title: "Integrated Payroll",
     description: "Manage payroll seamlessly with automatic tax calculations and direct deposits."
   },
   {
-    icon: <FileText size={32} className="text-brand-magenta-pink" />,
+    icon: <FileText size={32} className="text-brand-teal" />,
     title: "Quality Healthcare",
     description: "Provide your employees with access to high-quality healthcare coverage at competitive rates."
   }
@@ -28,13 +28,13 @@ const benefitsData = [
 const Benefits = () => {
   return (
     <section className="py-16 bg-white relative">
-      {/* Pink accent decoration */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-blue via-brand-pink to-brand-teal"></div>
+      {/* Blue accent decoration */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-blue via-brand-teal to-brand-blue"></div>
       
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Small Businesses <span className="gradient-text-pink">Choose Us</span>
+            Why Small Businesses <span className="gradient-text">Choose Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Focus on growing your business while we handle the administrative complexities.
@@ -45,7 +45,7 @@ const Benefits = () => {
           {benefitsData.map((benefit, index) => (
             <div 
               key={index} 
-              className={`bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 hover:border-brand-pink/30 group`}
+              className={`bg-white rounded-xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 hover:border-brand-blue/30 group`}
             >
               <div className="mb-4 group-hover:scale-110 transition-transform duration-300">{benefit.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>

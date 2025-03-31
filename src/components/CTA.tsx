@@ -6,20 +6,20 @@ const CTA = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-brand-pink">
+        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-brand-blue">
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to <span className="text-brand-pink">simplify</span> your business operations?</h2>
+              <h2 className="text-3xl font-bold mb-4">Ready to <span className="text-brand-blue">simplify</span> your business operations?</h2>
               <p className="text-gray-600 mb-6">
                 Join thousands of small businesses that trust us with their payroll, HR, and healthcare needs.
               </p>
               <div>
-                <Button className="cta-gradient-pink text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
                   Get Started Now
                 </Button>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-brand-pink to-brand-magenta-pink p-8 md:p-12 text-white flex flex-col justify-center">
+            <div className="bg-gradient-to-r from-brand-blue to-brand-teal p-8 md:p-12 text-white flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-4">Benefits at a Glance</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
