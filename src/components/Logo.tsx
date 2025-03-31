@@ -24,7 +24,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center">
       <img 
-        src="/lovable-uploads/080e6c02-d353-44af-9eba-2215d2cbae1c.png" 
+        src="/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png" 
         alt="Open Ocean Health Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
