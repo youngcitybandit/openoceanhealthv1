@@ -23,6 +23,7 @@ const ChatBox = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [newMessage, setNewMessage] = useState('');
   const [hasWelcomed, setHasWelcomed] = useState(false);
+  const [isTyping, setIsTyping] = useState(false);
 
   // Add welcome message when chat is first opened
   useEffect(() => {
@@ -52,6 +53,27 @@ const ChatBox = () => {
     }
   }, [isOpen, hasWelcomed]);
 
+  const getBotResponse = (userMessage: string) => {
+    const message = userMessage.toLowerCase();
+    
+    // Chat bot logic to provide relevant responses based on user input
+    if (message.includes('quote') || message.includes('pricing')) {
+      return "Our healthcare quotes are customized based on your business size and needs. Please complete the quote form, and we'll provide you with detailed pricing options.";
+    } else if (message.includes('coverage') || message.includes('benefits')) {
+      return "We offer comprehensive healthcare coverage including medical, dental, vision, and mental health benefits. Our plans are designed to meet the diverse needs of your employees.";
+    } else if (message.includes('how') && message.includes('works')) {
+      return "Our process is simple: fill out the quote form with your company information, and our team will analyze your needs to provide customized healthcare options for your business.";
+    } else if (message.includes('contact') || message.includes('speak') || message.includes('representative')) {
+      return "You can reach our customer service team at (800) 123-4567 or email us at support@healthcare.com. Would you like me to schedule a callback from one of our representatives?";
+    } else if (message.includes('thank')) {
+      return "You're welcome! Is there anything else I can help you with today?";
+    } else if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+      return "Hello there! How can I help you with your healthcare coverage needs today?";
+    } else {
+      return "Thank you for your message. If you have specific questions about our healthcare plans or the quote process, I'm happy to assist. You can also call us at (800) 123-4567 for immediate assistance.";
+    }
+  };
+
   const handleSendMessage = () => {
     if (newMessage.trim() === '') return;
 
@@ -63,25 +85,19 @@ const ChatBox = () => {
 
     setMessages(prev => [...prev, userMessage]);
     setNewMessage('');
+    setIsTyping(true);
 
-    // Simulate response after a short delay
+    // Simulate bot thinking with a delay before responding
     setTimeout(() => {
-      const botResponses = [
-        "Thanks for reaching out! Feel free to fill out our quote form, and I'm here to help if you have questions.",
-        "I'd be happy to help with that! You can continue with the quote form, or I can provide more information about our services.",
-        "Great question! Our team is ready to provide you with the best healthcare coverage for your business needs."
-      ];
-      
-      const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
-      
       const botReply = {
-        text: randomResponse,
+        text: getBotResponse(userMessage.text),
         isUser: false,
         timestamp: new Date()
       };
 
       setMessages(prev => [...prev, botReply]);
-    }, 1000);
+      setIsTyping(false);
+    }, 1500);
   };
 
   return (
@@ -131,6 +147,16 @@ const ChatBox = () => {
                 </div>
               </div>
             ))}
+            
+            {isTyping && (
+              <div className="mb-4 max-w-[80%] mr-auto">
+                <div className="bg-gray-100 text-gray-800 p-3 rounded-lg rounded-bl-none flex">
+                  <span className="animate-pulse mr-1">•</span>
+                  <span className="animate-pulse mr-1" style={{ animationDelay: '0.2s' }}>•</span>
+                  <span className="animate-pulse" style={{ animationDelay: '0.4s' }}>•</span>
+                </div>
+              </div>
+            )}
           </div>
           
           <div className="p-4 border-t">
