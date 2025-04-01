@@ -21,9 +21,9 @@ const Employers = () => {
                 Quality healthcare solutions that fit your budget and support your team's wellbeing.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/providers/join">
+                <Link to="/quote">
                   <Button className="bg-white text-primary border border-primary hover:bg-gray-50 transition-colors px-8 py-6 text-lg">
-                    Become a Provider
+                    Get a Quote
                   </Button>
                 </Link>
                 <Link to="/quote">
