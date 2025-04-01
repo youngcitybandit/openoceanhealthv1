@@ -16,6 +16,13 @@ const Research = () => {
       image: "https://via.placeholder.com/400x225"
     },
     {
+      title: "Rising Health Insurance Costs Are Crippling Small Businesses Across America",
+      source: "ETXView",
+      description: "An in-depth analysis of how escalating healthcare costs are impacting small business operations and sustainability.",
+      link: "https://www.etxview.com/rising-health-insurance-costs-are-crippling-small-businesses-across-america/article_1a1d5f6f-20c7-58fe-982f-866c50dffa86.html",
+      image: "https://via.placeholder.com/400x225"
+    },
+    {
       title: "The Future of Healthcare for Small Businesses",
       source: "Healthcare Research Institute",
       description: "An exploration of emerging trends in small business healthcare solutions and their long-term implications.",
