@@ -15,9 +15,6 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight gradient-text">
             Join the Future of Healthcare
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-6 leading-relaxed">
-            Smarter staffing for small businesses. Comprehensive administrative support, high-quality healthcare coverage options, tax benefits and more.
-          </p>
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
             Together, we're building a smarter, more sustainable healthcare model—powered by innovation, designed for impact, and built to serve both employers and employees.
             <br /><br />
