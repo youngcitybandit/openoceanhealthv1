@@ -28,11 +28,9 @@ const Employers = () => {
                       Get a Quote
                     </Button>
                   </Link>
-                  <Link to="/quote">
-                    <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                      Learn More
-                    </Button>
-                  </Link>
+                  <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                    Learn More
+                  </Button>
                 </div>
               </div>
               <Link to="/login" className="hidden md:block">

@@ -42,9 +42,7 @@ const Navigation = () => {
               {link.title}
             </a>
           ))}
-          <Link to="/quote">
-            <Button className="cta-gradient hover:opacity-90 transition-opacity">Learn More</Button>
-          </Link>
+          <Button className="cta-gradient hover:opacity-90 transition-opacity">Learn More</Button>
         </div>
         
         {/* Mobile Menu Button */}
@@ -69,11 +67,9 @@ const Navigation = () => {
                 {link.title}
               </a>
             ))}
-            <Link to="/quote">
-              <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
-                Learn More
-              </Button>
-            </Link>
+            <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
+              Learn More
+            </Button>
           </div>
         </div>
       )}
