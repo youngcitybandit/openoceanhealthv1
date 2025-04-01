@@ -12,11 +12,11 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return { logo: 'h-12' }; 
+        return { logo: 'h-14' }; 
       case 'lg':
-        return { logo: 'h-20' }; 
+        return { logo: 'h-24' }; 
       default: // md
-        return { logo: 'h-16' }; 
+        return { logo: 'h-20' }; 
     }
   };
   
