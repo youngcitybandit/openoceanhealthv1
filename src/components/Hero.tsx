@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight gradient-text">
-            Payroll. HR. Healthcare. <span className="gradient-text">Savings.</span> Simplified.
+            Join the Future of Healthcare
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
             Smarter staffing for small businesses. Comprehensive administrative support, high-quality healthcare coverage options, tax benefits and more.
