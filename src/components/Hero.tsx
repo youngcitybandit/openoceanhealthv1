@@ -21,16 +21,14 @@ const Hero = () => {
             The future of care starts now. Connect with us today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/providers/join">
-              <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
-                Become a Provider
-              </Button>
-            </Link>
             <Link to="/quote">
               <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg rounded-full shadow-lg">
-                Learn More
+                Get a Quote
               </Button>
             </Link>
+            <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
+              Learn More
+            </Button>
           </div>
         </div>
       </div>
