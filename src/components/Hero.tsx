@@ -16,7 +16,7 @@ const Hero = () => {
             Join the Future of Healthcare
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-            Together, we're building a smarter, more sustainable healthcare model—powered by innovation, designed for impact, and built to serve both employers and employees.
+            Together, we're building a smarter, more sustainable healthcare model—powered by innovation, designed for impact, and built to empower employers, employees and healthcare providers.
             <br /><br />
             The future of care starts now. Connect with us today.
           </p>
