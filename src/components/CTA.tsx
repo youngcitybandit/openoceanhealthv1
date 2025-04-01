@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Brain, Activity, Wifi, BarChart4 } from 'lucide-react';
+import { Brain, Activity, Wifi, BarChart4, Heart, Clock, Globe, Flame } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -48,24 +48,20 @@ const CTA = () => {
               <h3 className="text-xl font-bold mb-3 text-brand-blue">Impact & Benefits</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <div className="rounded-full bg-brand-teal h-2 w-2 mt-2 mr-2 flex-shrink-0"></div>
+                  <Heart className="h-5 w-5 mr-2 flex-shrink-0 text-brand-teal" />
                   <span className="text-gray-700">Improved patient outcomes through earlier diagnosis</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="rounded-full bg-brand-teal h-2 w-2 mt-2 mr-2 flex-shrink-0"></div>
+                  <Clock className="h-5 w-5 mr-2 flex-shrink-0 text-brand-teal" />
                   <span className="text-gray-700">Increased efficiency and reduced costs</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="rounded-full bg-brand-teal h-2 w-2 mt-2 mr-2 flex-shrink-0"></div>
+                  <Globe className="h-5 w-5 mr-2 flex-shrink-0 text-brand-teal" />
                   <span className="text-gray-700">Enhanced access to care for remote areas</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="rounded-full bg-brand-teal h-2 w-2 mt-2 mr-2 flex-shrink-0"></div>
+                  <Flame className="h-5 w-5 mr-2 flex-shrink-0 text-brand-teal" />
                   <span className="text-gray-700">Personalized medicine tailored to patients</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="rounded-full bg-brand-teal h-2 w-2 mt-2 mr-2 flex-shrink-0"></div>
-                  <span className="text-gray-700">Better patient engagement in healthcare</span>
                 </li>
               </ul>
             </div>
