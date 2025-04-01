@@ -23,6 +23,13 @@ const Research = () => {
       image: "https://via.placeholder.com/400x225"
     },
     {
+      title: "Americans' Challenges with Health Care Costs",
+      source: "Kaiser Family Foundation",
+      description: "A comprehensive report on how Americans struggle with healthcare costs, including insurance coverage gaps and medical debt.",
+      link: "https://www.kff.org/health-costs/issue-brief/americans-challenges-with-health-care-costs/",
+      image: "https://via.placeholder.com/400x225"
+    },
+    {
       title: "The Future of Healthcare for Small Businesses",
       source: "Healthcare Research Institute",
       description: "An exploration of emerging trends in small business healthcare solutions and their long-term implications.",
