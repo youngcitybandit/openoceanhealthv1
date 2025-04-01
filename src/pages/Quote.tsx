@@ -21,6 +21,8 @@ import {
 } from '@/components/ui/select';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
+import Benefits from '@/components/Benefits';
+import ProvidersChooseUs from '@/components/ProvidersChooseUs';
 
 const Quote = () => {
   const [step, setStep] = useState(1);
@@ -75,6 +77,7 @@ const Quote = () => {
       <main className="flex-grow pt-24 pb-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
+            {/* Quote Form Card */}
             <Card className="shadow-lg">
               <CardHeader className="bg-gradient-to-r from-brand-blue to-brand-teal text-white">
                 <CardTitle className="text-2xl">Get a Custom Quote</CardTitle>
@@ -367,6 +370,11 @@ const Quote = () => {
           </div>
         </div>
       </main>
+      
+      {/* Benefits and Providers sections */}
+      <Benefits />
+      <ProvidersChooseUs />
+      
       <Footer />
     </div>
   );
