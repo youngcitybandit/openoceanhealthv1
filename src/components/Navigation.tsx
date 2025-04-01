@@ -43,7 +43,7 @@ const Navigation = () => {
             </a>
           ))}
           <Link to="/quote">
-            <Button className="cta-gradient hover:opacity-90 transition-opacity">Learn More</Button>
+            <Button className="cta-gradient hover:opacity-90 transition-opacity">Get a Quote</Button>
           </Link>
         </div>
         
@@ -71,7 +71,7 @@ const Navigation = () => {
             ))}
             <Link to="/quote">
               <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
-                Learn More
+                Get a Quote
               </Button>
             </Link>
           </div>
