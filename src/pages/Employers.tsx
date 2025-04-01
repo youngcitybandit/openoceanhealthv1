@@ -3,6 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Employers = () => {
   return (
@@ -19,9 +20,11 @@ const Employers = () => {
               <p className="text-xl text-gray-600 mb-8">
                 Streamline your HR, payroll, and benefits management so you can focus on growing your business.
               </p>
-              <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                Schedule a Demo
-              </Button>
+              <Link to="/quote">
+                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                  Get a Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
