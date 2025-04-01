@@ -20,7 +20,7 @@ const Brokers = () => {
                 Join our broker network and provide your small business clients with comprehensive HR and benefits solutions.
               </p>
               <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                Become a Partner
+                Become a Broker
               </Button>
             </div>
           </div>
