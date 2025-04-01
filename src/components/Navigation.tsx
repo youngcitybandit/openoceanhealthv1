@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,7 +42,9 @@ const Navigation = () => {
               {link.title}
             </a>
           ))}
-          <Button className="cta-gradient hover:opacity-90 transition-opacity">Get Started Now</Button>
+          <Link to="/quote">
+            <Button className="cta-gradient hover:opacity-90 transition-opacity">Get a Quote</Button>
+          </Link>
         </div>
         
         {/* Mobile Menu Button */}
@@ -66,9 +69,11 @@ const Navigation = () => {
                 {link.title}
               </a>
             ))}
-            <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
-              Get Started Now
-            </Button>
+            <Link to="/quote">
+              <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
+                Get a Quote
+              </Button>
+            </Link>
           </div>
         </div>
       )}

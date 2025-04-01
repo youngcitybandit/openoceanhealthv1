@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
   return (
@@ -14,9 +15,11 @@ const CTA = () => {
                 Join thousands of small businesses that trust us with their payroll, HR, and healthcare needs.
               </p>
               <div>
-                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                  Get Started Now
-                </Button>
+                <Link to="/quote">
+                  <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                    Get a Quote
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="bg-gradient-to-r from-brand-blue to-brand-teal p-8 md:p-12 text-white flex flex-col justify-center">

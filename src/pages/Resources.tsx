@@ -3,6 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Resources = () => {
   return (
@@ -19,9 +20,11 @@ const Resources = () => {
               <p className="text-xl text-gray-600 mb-8">
                 Access guides, templates, and expert advice to help your small business thrive.
               </p>
-              <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                Explore Resources
-              </Button>
+              <Link to="/quote">
+                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                  Get a Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

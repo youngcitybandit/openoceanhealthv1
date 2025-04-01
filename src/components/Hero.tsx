@@ -19,9 +19,11 @@ const Hero = () => {
             Smarter staffing for small businesses. Comprehensive administrative support, high-quality healthcare coverage options, tax benefits and more.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg rounded-full shadow-lg">
-              Get Started Now
-            </Button>
+            <Link to="/quote">
+              <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg rounded-full shadow-lg">
+                Get a Quote
+              </Button>
+            </Link>
             <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
               Learn More
             </Button>
