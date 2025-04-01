@@ -18,7 +18,7 @@ const Employers = () => {
                 Empower your business with simplified operations
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Streamline your HR, payroll, and benefits management so you can focus on growing your business.
+                Quality healthcare solutions that fit your budget and support your team's wellbeing.
               </p>
               <Link to="/quote">
                 <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
