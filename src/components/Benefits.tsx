@@ -1,27 +1,27 @@
 
 import React from 'react';
-import { CircleDollarSign, Users, FileText, Calendar } from 'lucide-react';
+import { Heart, DollarSign, ShieldCheck, Clock } from 'lucide-react';
 
 const benefitsData = [
   {
-    icon: <Users size={32} className="text-brand-blue" />,
-    title: "Simplified HR",
-    description: "Streamline your HR processes with our comprehensive tools designed for small businesses."
-  },
-  {
-    icon: <CircleDollarSign size={32} className="text-brand-teal" />,
-    title: "Tax Benefits",
-    description: "Small businesses qualify for substantial tax benefits when offering healthcare through our platform."
-  },
-  {
-    icon: <Calendar size={32} className="text-brand-blue" />,
-    title: "Integrated Payroll",
-    description: "Manage payroll seamlessly with automatic tax calculations and direct deposits."
-  },
-  {
-    icon: <FileText size={32} className="text-brand-teal" />,
+    icon: <Heart size={32} className="text-brand-blue" />,
     title: "Quality Healthcare",
-    description: "Provide your employees with access to high-quality healthcare coverage at competitive rates."
+    description: "Provide premium healthcare options with access to top doctors, specialists, and hospitals nationwide."
+  },
+  {
+    icon: <DollarSign size={32} className="text-brand-teal" />,
+    title: "Affordable Plans",
+    description: "Small businesses save up to 30% on healthcare costs while offering better benefits to employees."
+  },
+  {
+    icon: <ShieldCheck size={32} className="text-brand-blue" />,
+    title: "Comprehensive Coverage",
+    description: "From preventive care to mental health services, our plans cover what matters most to your team."
+  },
+  {
+    icon: <Clock size={32} className="text-brand-teal" />,
+    title: "Simple Administration",
+    description: "Spend less time on paperwork with our streamlined platform for managing benefits and enrollment."
   }
 ];
 
@@ -37,7 +37,7 @@ const Benefits = () => {
             Why Small Businesses <span className="gradient-text">Choose Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Focus on growing your business while we handle the administrative complexities.
+            Quality healthcare solutions that fit your budget and support your team's wellbeing.
           </p>
         </div>
         
