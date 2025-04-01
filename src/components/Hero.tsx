@@ -27,11 +27,6 @@ const Hero = () => {
             <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
               Learn More
             </Button>
-            <Link to="/quote">
-              <Button className="bg-white border-2 border-brand-teal text-brand-teal hover:bg-teal-50 hover:text-brand-blue transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
-                Get a Quote
-              </Button>
-            </Link>
           </div>
         </div>
       </div>
