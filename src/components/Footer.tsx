@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Logo from './Logo';
+import { Linkedin, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -34,9 +35,19 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
+            <div className="mb-4 md:mb-0 flex items-center gap-6">
               <a href="/" className="hover:opacity-90 transition-opacity">
                 <Logo variant="white" />
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/openoceanhealth/posts/?feedView=all" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1"
+              >
+                <Linkedin size={20} />
+                <span>Follow us</span>
+                <ExternalLink size={14} />
               </a>
             </div>
             <div className="text-gray-400 text-sm">
