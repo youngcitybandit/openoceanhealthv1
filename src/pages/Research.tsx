@@ -30,6 +30,13 @@ const Research = () => {
       image: "https://via.placeholder.com/400x225"
     },
     {
+      title: "UnitedHealth Chief Is Shot in Parking Lot by Mother of Denied Patient",
+      source: "New York Times",
+      description: "A healthcare executive was shot by a mother whose son was repeatedly denied care, highlighting issues with insurance coverage decisions.",
+      link: "https://www.nytimes.com/2024/12/06/nyregion/unitedhealthcare-brian-thompson-shooting.html",
+      image: "https://via.placeholder.com/400x225"
+    },
+    {
       title: "The Future of Healthcare for Small Businesses",
       source: "Healthcare Research Institute",
       description: "An exploration of emerging trends in small business healthcare solutions and their long-term implications.",
