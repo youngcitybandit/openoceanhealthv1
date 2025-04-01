@@ -20,11 +20,18 @@ const Employers = () => {
               <p className="text-xl text-gray-600 mb-8">
                 Quality healthcare solutions that fit your budget and support your team's wellbeing.
               </p>
-              <Link to="/quote">
-                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                  Get a Quote
-                </Button>
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link to="/providers/join">
+                  <Button className="bg-white text-primary border border-primary hover:bg-gray-50 transition-colors px-8 py-6 text-lg">
+                    Become a Provider
+                  </Button>
+                </Link>
+                <Link to="/quote">
+                  <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
