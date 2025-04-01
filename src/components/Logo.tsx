@@ -34,7 +34,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
         className={`text-lg font-medium ${
           variant === 'white' 
             ? 'text-white' 
-            : 'bg-gradient-to-r from-brand-blue to-brand-teal bg-clip-text text-transparent hover:from-brand-teal hover:to-brand-blue'
+            : 'bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent hover:from-brand-blue hover:to-brand-teal'
         }`}
       >
         Open Ocean Health
