@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Book, ArrowRight } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Research = () => {
   const articles = [
@@ -13,35 +14,35 @@ const Research = () => {
       source: "JP Morgan Chase Institute",
       description: "This research examines the financial impact of health insurance costs on small businesses and their employees.",
       link: "https://www.jpmorganchase.com/institute/all-topics/business-growth-and-entrepreneurship/small-business-health-insurance-burdens",
-      image: "https://via.placeholder.com/400x225"
+      image: "/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png"
     },
     {
       title: "Rising Health Insurance Costs Are Crippling Small Businesses Across America",
       source: "ETXView",
       description: "An in-depth analysis of how escalating healthcare costs are impacting small business operations and sustainability.",
       link: "https://www.etxview.com/rising-health-insurance-costs-are-crippling-small-businesses-across-america/article_1a1d5f6f-20c7-58fe-982f-866c50dffa86.html",
-      image: "https://via.placeholder.com/400x225"
+      image: "/lovable-uploads/5a24503f-4955-4bc4-b6ba-29436a1b5a82.png"
     },
     {
       title: "Americans' Challenges with Health Care Costs",
       source: "Kaiser Family Foundation",
       description: "A comprehensive report on how Americans struggle with healthcare costs, including insurance coverage gaps and medical debt.",
       link: "https://www.kff.org/health-costs/issue-brief/americans-challenges-with-health-care-costs/",
-      image: "https://via.placeholder.com/400x225"
+      image: "/lovable-uploads/080e6c02-d353-44af-9eba-2215d2cbae1c.png"
     },
     {
       title: "The Future of Healthcare for Small Businesses",
       source: "Healthcare Research Institute",
       description: "An exploration of emerging trends in small business healthcare solutions and their long-term implications.",
       link: "#",
-      image: "https://via.placeholder.com/400x225"
+      image: "/lovable-uploads/281a7855-6625-486d-a288-99cc5a58b784.png"
     },
     {
       title: "Cost-Effective Benefits for SMBs",
       source: "Business Health Coalition",
       description: "Strategies for small and medium businesses to provide comprehensive benefits while managing costs.",
       link: "#",
-      image: "https://via.placeholder.com/400x225"
+      image: "/lovable-uploads/d7303e27-b6d6-452a-8550-291501a709e5.png"
     },
   ];
 
@@ -74,13 +75,13 @@ const Research = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article, index) => (
                 <div key={index} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-w-16 aspect-h-9 bg-gray-100">
+                  <AspectRatio ratio={16/9} className="bg-gray-100">
                     <img 
                       src={article.image} 
                       alt={article.title} 
                       className="object-cover w-full h-full" 
                     />
-                  </div>
+                  </AspectRatio>
                   <div className="p-6">
                     <div className="text-sm text-gray-500 mb-2">{article.source}</div>
                     <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
