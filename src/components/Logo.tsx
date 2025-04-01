@@ -25,10 +25,20 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
   return (
     <div className="flex items-center">
       <img 
-        src="/lovable-uploads/d55b491f-a30a-41c4-842b-6c734074d114.png" 
+        src="/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png" 
         alt="Open Ocean Health Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
+      <Button 
+        variant="ghost" 
+        className={`text-lg font-medium ${
+          variant === 'white' 
+            ? 'text-white' 
+            : 'bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent hover:from-brand-blue hover:to-brand-teal'
+        }`}
+      >
+        Open Ocean Health
+      </Button>
     </div>
   );
 };
