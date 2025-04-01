@@ -37,13 +37,13 @@ const Navigation = () => {
             <a 
               key={index} 
               href={link.href} 
-              className="text-gray-700 hover:text-brand-orange transition-colors duration-300"
+              className="text-gray-700 hover:text-brand-blue transition-colors duration-300"
             >
               {link.title}
             </a>
           ))}
           <Link to="/quote">
-            <Button className="bg-brand-orange hover:bg-brand-orange/90 transition-opacity text-white">Learn More</Button>
+            <Button className="cta-gradient hover:opacity-90 transition-opacity">Learn More</Button>
           </Link>
         </div>
         
@@ -63,14 +63,14 @@ const Navigation = () => {
               <a 
                 key={index} 
                 href={link.href} 
-                className="text-gray-700 hover:text-brand-orange transition-colors duration-300 py-2"
+                className="text-gray-700 hover:text-brand-blue transition-colors duration-300 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.title}
               </a>
             ))}
             <Link to="/quote">
-              <Button className="bg-brand-orange hover:bg-brand-orange/90 transition-opacity text-white w-full">
+              <Button className="cta-gradient hover:opacity-90 transition-opacity w-full">
                 Learn More
               </Button>
             </Link>

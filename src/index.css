@@ -91,30 +91,22 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-orange;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-teal;
   }
 }
 
 .hero-gradient {
-  background: linear-gradient(to right, rgba(14, 165, 233, 0.2), rgba(249, 115, 22, 0.2));
+  background: linear-gradient(to right, rgba(14, 165, 233, 0.2), rgba(13, 148, 136, 0.2));
 }
 
 .cta-gradient {
-  background: linear-gradient(to right, #0EA5E9, #F97316);
+  background: linear-gradient(to right, #0EA5E9, #0D9488);
 }
 
 .blue-accent-border {
   border-color: rgba(14, 165, 233, 0.3);
 }
 
-.orange-accent-border {
-  border-color: rgba(249, 115, 22, 0.3);
-}
-
 .blue-highlight {
   box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
-}
-
-.orange-highlight {
-  box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
 }

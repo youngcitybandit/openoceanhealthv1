@@ -11,7 +11,7 @@ const Employers = () => {
       <Navigation />
       
       <main className="flex-grow">
-        <div className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-r from-blue-50 to-orange-50">
+        <div className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-r from-blue-50 to-teal-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -21,8 +21,8 @@ const Employers = () => {
                 Quality healthcare solutions that fit your budget and support your team's wellbeing.
               </p>
               <Link to="/quote">
-                <Button className="bg-brand-orange text-white hover:bg-brand-orange/90 transition-opacity px-8 py-6 text-lg">
-                  Learn More
+                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                  Get a Quote
                 </Button>
               </Link>
             </div>
