@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Logo from './Logo';
-import { Linkedin, ExternalLink, Instagram, Facebook, TiktokIcon } from 'lucide-react';
+import { Linkedin, ExternalLink, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,24 @@ const Footer = () => {
     },
     { 
       name: "TikTok", 
-      icon: <TiktokIcon size={20} />, 
+      // Using custom SVG for TikTok since it's not available in lucide-react
+      icon: (
+        <svg 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+        >
+          <path d="M9 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+          <path d="M16 8v8"/>
+          <path d="M12 16v-8"/>
+          <path d="M20 12V8a4 4 0 0 0-4-4h-1"/>
+        </svg>
+      ), 
       url: "#" 
     }
   ];
