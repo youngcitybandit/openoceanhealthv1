@@ -3,6 +3,8 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { UserRound } from 'lucide-react';
 
 const Providers = () => {
   return (
@@ -12,16 +14,24 @@ const Providers = () => {
       <main className="flex-grow">
         <div className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-r from-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Join our network of healthcare providers
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Partner with us to serve small business employees with streamlined healthcare services.
-              </p>
-              <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                Join Our Network
-              </Button>
+            <div className="flex justify-between items-start">
+              <div className="max-w-3xl">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                  Join our network of healthcare providers
+                </h1>
+                <p className="text-xl text-gray-600 mb-8">
+                  Partner with us to serve small business employees with streamlined healthcare services.
+                </p>
+                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                  Join Our Network
+                </Button>
+              </div>
+              <Link to="/login" className="hidden md:block">
+                <Button variant="outline" className="flex items-center gap-2 px-4 py-2">
+                  <UserRound size={18} />
+                  Login
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

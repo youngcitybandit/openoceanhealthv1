@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { UserRound } from 'lucide-react';
 
 const Employers = () => {
   return (
@@ -13,25 +14,33 @@ const Employers = () => {
       <main className="flex-grow">
         <div className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-r from-blue-50 to-teal-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Empower your business with simplified operations
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Quality healthcare solutions that fit your budget and support your team's wellbeing.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/quote">
-                  <Button className="bg-white text-primary border border-primary hover:bg-gray-50 transition-colors px-8 py-6 text-lg">
-                    Get a Quote
-                  </Button>
-                </Link>
-                <Link to="/quote">
-                  <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                    Learn More
-                  </Button>
-                </Link>
+            <div className="flex justify-between items-start">
+              <div className="max-w-3xl">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                  Empower your business with simplified operations
+                </h1>
+                <p className="text-xl text-gray-600 mb-8">
+                  Quality healthcare solutions that fit your budget and support your team's wellbeing.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link to="/quote">
+                    <Button className="bg-white text-primary border border-primary hover:bg-gray-50 transition-colors px-8 py-6 text-lg">
+                      Get a Quote
+                    </Button>
+                  </Link>
+                  <Link to="/quote">
+                    <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                      Learn More
+                    </Button>
+                  </Link>
+                </div>
               </div>
+              <Link to="/login" className="hidden md:block">
+                <Button variant="outline" className="flex items-center gap-2 px-4 py-2">
+                  <UserRound size={18} />
+                  Login
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
