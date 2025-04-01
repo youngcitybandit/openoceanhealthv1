@@ -13,6 +13,7 @@ import Locations from "./pages/Locations";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import Quote from "./pages/Quote";
+import Research from "./pages/Research";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/research" element={<Research />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

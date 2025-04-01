@@ -31,9 +31,11 @@ const Hero = () => {
                 Become a Provider
               </Button>
             </Link>
-            <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
-              Learn More
-            </Button>
+            <Link to="/research">
+              <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

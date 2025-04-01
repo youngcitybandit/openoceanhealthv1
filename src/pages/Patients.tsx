@@ -22,9 +22,11 @@ const Patients = () => {
                 <p className="text-xl text-gray-600 mb-8">
                   Access high-quality healthcare benefits through your employer with our streamlined platform.
                 </p>
-                <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-                  Learn More
-                </Button>
+                <Link to="/research">
+                  <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
               <Link to="/login" className="hidden md:block">
                 <Button variant="outline" className="flex items-center gap-2 px-4 py-2">
