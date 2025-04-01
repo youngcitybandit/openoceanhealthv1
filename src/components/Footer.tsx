@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Logo from './Logo';
-import { Linkedin, ExternalLink } from 'lucide-react';
+import { Linkedin, ExternalLink, Instagram, Facebook, TiktokIcon } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,6 +12,29 @@ const Footer = () => {
     "Resources": ["Blog", "Guides", "Webinars", "Help Center"],
     "Legal": ["Privacy Policy", "Terms of Service", "Accessibility"]
   };
+  
+  const socialLinks = [
+    { 
+      name: "LinkedIn", 
+      icon: <Linkedin size={20} />, 
+      url: "https://www.linkedin.com/company/openoceanhealth/posts/?feedView=all" 
+    },
+    { 
+      name: "Instagram", 
+      icon: <Instagram size={20} />, 
+      url: "#" 
+    },
+    { 
+      name: "Facebook", 
+      icon: <Facebook size={20} />, 
+      url: "#" 
+    },
+    { 
+      name: "TikTok", 
+      icon: <TiktokIcon size={20} />, 
+      url: "#" 
+    }
+  ];
   
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
@@ -35,21 +58,33 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0 flex items-center gap-6">
+            <div className="mb-4 md:mb-0">
               <a href="/" className="hover:opacity-90 transition-opacity">
                 <Logo variant="white" />
               </a>
-              <a 
-                href="https://www.linkedin.com/company/openoceanhealth/posts/?feedView=all" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1"
-              >
-                <Linkedin size={20} />
-                <span>Follow us</span>
-                <ExternalLink size={14} />
-              </a>
             </div>
+            
+            <div className="flex items-center gap-4 mb-4 md:mb-0">
+              {socialLinks.map((social, index) => (
+                <a 
+                  key={index}
+                  href={social.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center gap-1"
+                  aria-label={`Follow us on ${social.name}`}
+                >
+                  {social.icon}
+                  {social.name === "LinkedIn" && (
+                    <>
+                      <span className="hidden sm:inline">Follow us</span>
+                      <ExternalLink size={14} />
+                    </>
+                  )}
+                </a>
+              ))}
+            </div>
+            
             <div className="text-gray-400 text-sm">
               &copy; {currentYear} PHS. All rights reserved.
             </div>
