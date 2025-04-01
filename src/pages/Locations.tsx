@@ -24,7 +24,7 @@ const Locations = () => {
       <main className="flex-grow container mx-auto px-4 py-20">
         <h1 className="text-3xl font-bold mb-8 text-center">Our Locations</h1>
         <div className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-semibold mb-4">Select a state to see locations near you:</h2>
+          <h2 className="text-xl font-semibold mb-4">Select a state to see programs near you:</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {states.map((state, index) => (
               <a 
