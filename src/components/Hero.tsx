@@ -26,6 +26,11 @@ const Hero = () => {
                 Get a Quote
               </Button>
             </Link>
+            <Link to="/providers/join">
+              <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-blue transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
+                Become a Provider
+              </Button>
+            </Link>
             <Button className="bg-white border-2 border-brand-blue text-brand-blue hover:bg-blue-50 hover:text-brand-teal transition-colors px-8 py-6 text-lg rounded-full shadow-lg">
               Learn More
             </Button>
