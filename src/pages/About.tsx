@@ -15,7 +15,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                About PHS Staffing
+                About Open Ocean Health
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Transforming how small businesses handle payroll, HR, and healthcare benefits.
