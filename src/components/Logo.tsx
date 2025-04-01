@@ -31,7 +31,11 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
       />
       <Button 
         variant="ghost" 
-        className={`text-lg font-medium ${variant === 'white' ? 'text-white' : 'text-brand-blue'}`}
+        className={`text-lg font-medium ${
+          variant === 'white' 
+            ? 'text-white' 
+            : 'bg-gradient-to-r from-brand-blue to-brand-teal bg-clip-text text-transparent hover:from-brand-teal hover:to-brand-blue'
+        }`}
       >
         Open Ocean Health
       </Button>
