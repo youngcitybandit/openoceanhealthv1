@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Brain, Activity, Wifi, BarChart4 } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -10,9 +11,9 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-brand-blue">
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to <span className="text-brand-blue">transform</span> healthcare delivery?</h2>
+              <h2 className="text-3xl font-bold mb-4">Transforming Healthcare Through <span className="text-brand-blue">Technology</span></h2>
               <p className="text-gray-600 mb-6">
-                Join us in building a sustainable, efficient healthcare model that empowers employers, employees, and providers alike.
+                Health tech uses advanced software, AI, and data tools to improve healthcare delivery, outcomes, and efficiency—creating better experiences for patients and providers alike.
               </p>
               <div>
                 <Link to="/quote">
@@ -23,31 +24,23 @@ const CTA = () => {
               </div>
             </div>
             <div className="bg-gradient-to-r from-brand-blue to-brand-teal p-8 md:p-12 text-white flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-4">Benefits at a Glance</h3>
+              <h3 className="text-2xl font-bold mb-4">Key Innovations</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Sustainable healthcare delivery</span>
+                  <Brain className="h-6 w-6 mr-2 flex-shrink-0" />
+                  <span>AI-powered diagnostics and personalized care</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Innovative care models</span>
+                  <Activity className="h-6 w-6 mr-2 flex-shrink-0" />
+                  <span>IoT devices for real-time health monitoring</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Comprehensive health benefits</span>
+                  <Wifi className="h-6 w-6 mr-2 flex-shrink-0" />
+                  <span>Telehealth solutions for remote care access</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Dedicated support ecosystem</span>
+                  <BarChart4 className="h-6 w-6 mr-2 flex-shrink-0" />
+                  <span>Data analytics for improved outcomes</span>
                 </li>
               </ul>
             </div>
