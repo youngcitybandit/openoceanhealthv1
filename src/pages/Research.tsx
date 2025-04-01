@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Book, ArrowRight } from 'lucide-react';
+import { ExternalLink, Book, ArrowRight, Mail } from 'lucide-react';
 
 const Research = () => {
   const articles = [
@@ -102,8 +102,8 @@ const Research = () => {
               <p className="text-gray-600 mb-6">Looking for more resources? Check back regularly as we add new research and articles.</p>
               <Link to="/quote">
                 <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-6 py-2">
-                  <span>Get a Quote</span>
-                  <ArrowRight size={16} />
+                  <Mail size={16} />
+                  <span>Subscribe to our Newsletter</span>
                 </Button>
               </Link>
             </div>
