@@ -18,7 +18,10 @@ const About = () => {
                 About Open Ocean Health
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Transforming how small businesses handle payroll, HR, and healthcare benefits.
+                Join Us in Transforming Healthcare
+                Together, we can build a sustainable, efficient, and effective healthcare model—one that empowers employers, employees, and providers alike through cutting-edge innovation.
+
+                Let's reimagine what's possible. Contact us today.
               </p>
               <Link to="/quote">
                 <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
