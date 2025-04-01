@@ -10,9 +10,9 @@ const CTA = () => {
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-brand-blue">
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4">Ready to <span className="text-brand-blue">simplify</span> your business operations?</h2>
+              <h2 className="text-3xl font-bold mb-4">Ready to <span className="text-brand-blue">transform</span> healthcare delivery?</h2>
               <p className="text-gray-600 mb-6">
-                Join thousands of small businesses that trust us with their payroll, HR, and healthcare needs.
+                Join us in building a sustainable, efficient healthcare model that empowers employers, employees, and providers alike.
               </p>
               <div>
                 <Link to="/quote">
@@ -29,13 +29,13 @@ const CTA = () => {
                   <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Simplified administrative tasks</span>
+                  <span>Sustainable healthcare delivery</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Tax savings opportunities</span>
+                  <span>Innovative care models</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -47,7 +47,7 @@ const CTA = () => {
                   <svg className="h-6 w-6 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Dedicated customer support</span>
+                  <span>Dedicated support ecosystem</span>
                 </li>
               </ul>
             </div>
