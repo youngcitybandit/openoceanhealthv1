@@ -1,8 +1,6 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import Logo from './Logo';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
@@ -26,9 +24,6 @@ const Navigation = () => {
     <nav className="w-full py-4 bg-white/90 backdrop-blur-sm fixed top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="hover:opacity-90 transition-opacity">
-            <Logo showIcon={true} />
-          </a>
         </div>
         
         <div className="hidden md:flex items-center space-x-6">
