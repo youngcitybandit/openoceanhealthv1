@@ -2,10 +2,10 @@
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import CTA from '@/components/CTA';
 import Benefits from '@/components/Benefits';
 import ProvidersChooseUs from '@/components/ProvidersChooseUs';
 import LocationsSection from '@/components/LocationsSection';
-import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -14,10 +14,10 @@ const Index = () => {
       <Navigation />
       <main className="flex-grow">
         <Hero />
+        <CTA />
         <Benefits />
         <ProvidersChooseUs />
         <LocationsSection />
-        <CTA />
       </main>
       <Footer />
     </div>
