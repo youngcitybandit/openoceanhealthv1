@@ -26,7 +26,7 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
     <div className="flex items-center">
       <img 
         src="/lovable-uploads/79b538f7-f3bb-4657-a52a-d6a5d35253ab.png" 
-        alt="Open Ocean Health Logo" 
+        alt="OpenOceanHealth Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
       <Button 
@@ -37,10 +37,11 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
             : 'bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent hover:from-brand-blue hover:to-brand-teal'
         }`}
       >
-        Open Ocean Health
+        OpenOceanHealth
       </Button>
     </div>
   );
 };
 
 export default Logo;
+
