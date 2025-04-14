@@ -13,42 +13,42 @@ const Research = () => {
       source: "JP Morgan Chase Institute",
       description: "This research examines the financial impact of health insurance costs on small businesses and their employees.",
       link: "https://www.jpmorganchase.com/institute/all-topics/business-growth-and-entrepreneurship/small-business-health-insurance-burdens",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
     {
       title: "Rising Health Insurance Costs Are Crippling Small Businesses Across America",
       source: "ETXView",
       description: "An in-depth analysis of how escalating healthcare costs are impacting small business operations and sustainability.",
       link: "https://www.etxview.com/rising-health-insurance-costs-are-crippling-small-businesses-across-america/article_1a1d5f6f-20c7-58fe-982f-866c50dffa86.html",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
     {
       title: "Americans' Challenges with Health Care Costs",
       source: "Kaiser Family Foundation",
       description: "A comprehensive report on how Americans struggle with healthcare costs, including insurance coverage gaps and medical debt.",
       link: "https://www.kff.org/health-costs/issue-brief/americans-challenges-with-health-care-costs/",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
     {
       title: "UnitedHealth Chief Is Shot in Parking Lot by Mother of Denied Patient",
       source: "New York Times",
       description: "A healthcare executive was shot by a mother whose son was repeatedly denied care, highlighting issues with insurance coverage decisions.",
       link: "https://www.nytimes.com/2024/12/06/nyregion/unitedhealthcare-brian-thompson-shooting.html",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
     {
       title: "The Future of Healthcare for Small Businesses",
       source: "Healthcare Research Institute",
       description: "An exploration of emerging trends in small business healthcare solutions and their long-term implications.",
       link: "#",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
     {
       title: "Cost-Effective Benefits for SMBs",
       source: "Business Health Coalition",
       description: "Strategies for small and medium businesses to provide comprehensive benefits while managing costs.",
       link: "#",
-      image: "https://via.placeholder.com/400x225"
+      image: null
     },
   ];
 
@@ -81,13 +81,15 @@ const Research = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {articles.map((article, index) => (
                 <div key={index} className="border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-w-16 aspect-h-9 bg-gray-100">
-                    <img 
-                      src={article.image} 
-                      alt={article.title} 
-                      className="object-cover w-full h-full" 
-                    />
-                  </div>
+                  {article.image && (
+                    <div className="aspect-w-16 aspect-h-9 bg-gray-100">
+                      <img 
+                        src={article.image} 
+                        alt={article.title} 
+                        className="object-cover w-full h-full" 
+                      />
+                    </div>
+                  )}
                   <div className="p-6">
                     <div className="text-sm text-gray-500 mb-2">{article.source}</div>
                     <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
@@ -124,3 +126,4 @@ const Research = () => {
 };
 
 export default Research;
+
