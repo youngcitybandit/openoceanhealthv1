@@ -27,7 +27,7 @@ const Navigation = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
             <img 
-              src="/lovable-uploads/97e154f3-ebcd-435e-8f0a-57d8951ee1a5.png" 
+              src="/lovable-uploads/d0935e9d-cc9f-4d51-b74e-210ae34b051a.png" 
               alt="OpenOceanHealth Logo" 
               className="h-10 mr-4"
             />
