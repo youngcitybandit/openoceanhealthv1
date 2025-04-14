@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -39,7 +38,7 @@ const Footer = () => {
                 <img 
                   src="/lovable-uploads/97561c21-9424-4d58-89a0-c4b32be19657.png" 
                   alt="Company Logo" 
-                  className="h-8 invert brightness-0"
+                  className="h-8"
                 />
               </Link>
               &copy; {currentYear} OpenOceanHealth. All rights reserved.
