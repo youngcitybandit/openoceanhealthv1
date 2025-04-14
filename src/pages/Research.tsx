@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -9,30 +8,30 @@ import { ExternalLink, Book, ArrowRight, Mail } from 'lucide-react';
 const Research = () => {
   const articles = [
     {
-      title: "Small Business Health Insurance Burdens",
+      title: "Small Business Healthcare Costs Burdens",
       source: "JP Morgan Chase Institute",
-      description: "This research examines the financial impact of health insurance costs on small businesses and their employees.",
+      description: "This research examines the financial impact of healthcare costs on small businesses and their employees.",
       link: "https://www.jpmorganchase.com/institute/all-topics/business-growth-and-entrepreneurship/small-business-health-insurance-burdens",
       image: null
     },
     {
-      title: "Rising Health Insurance Costs Are Crippling Small Businesses Across America",
+      title: "Rising Healthcare Costs Are Crippling Small Businesses Across America",
       source: "ETXView",
       description: "An in-depth analysis of how escalating healthcare costs are impacting small business operations and sustainability.",
       link: "https://www.etxview.com/rising-health-insurance-costs-are-crippling-small-businesses-across-america/article_1a1d5f6f-20c7-58fe-982f-866c50dffa86.html",
       image: null
     },
     {
-      title: "Americans' Challenges with Health Care Costs",
+      title: "Americans' Challenges with Healthcare Costs",
       source: "Kaiser Family Foundation",
-      description: "A comprehensive report on how Americans struggle with healthcare costs, including insurance coverage gaps and medical debt.",
+      description: "A comprehensive report on how Americans struggle with healthcare costs, including healthcare coverage gaps and medical debt.",
       link: "https://www.kff.org/health-costs/issue-brief/americans-challenges-with-health-care-costs/",
       image: null
     },
     {
       title: "UnitedHealth Chief Is Shot in Parking Lot by Mother of Denied Patient",
       source: "New York Times",
-      description: "A healthcare executive was shot by a mother whose son was repeatedly denied care, highlighting issues with insurance coverage decisions.",
+      description: "A healthcare executive was shot by a mother whose son was repeatedly denied care, highlighting issues with healthcare coverage decisions.",
       link: "https://www.nytimes.com/2024/12/06/nyregion/unitedhealthcare-brian-thompson-shooting.html",
       image: null
     },
@@ -126,4 +125,3 @@ const Research = () => {
 };
 
 export default Research;
-
