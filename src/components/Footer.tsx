@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Logo from './Logo';
 import { Linkedin, ExternalLink, Instagram, Facebook } from 'lucide-react';
@@ -31,7 +30,6 @@ const Footer = () => {
     },
     { 
       name: "TikTok", 
-      // Using custom SVG for TikTok since it's not available in lucide-react
       icon: (
         <svg 
           width="20" 
@@ -103,7 +101,7 @@ const Footer = () => {
             </div>
             
             <div className="text-gray-400 text-sm">
-              &copy; {currentYear} PHS. All rights reserved.
+              &copy; {currentYear} OpenOceanHealth. All rights reserved.
             </div>
           </div>
         </div>
