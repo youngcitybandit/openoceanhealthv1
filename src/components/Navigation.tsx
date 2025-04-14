@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -28,7 +29,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/2e5a42fa-e1dc-40fd-b64a-1410f0164f07.png" 
               alt="OpenOceanHealth Logo" 
-              className="h-10 mr-4"
+              className="h-12 mr-4" // Changed from h-10 to h-12 for slight enlargement
             />
           </Link>
         </div>
