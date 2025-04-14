@@ -9,7 +9,6 @@ import Employers from "./pages/Employers";
 import Members from "./pages/Members";
 import Brokers from "./pages/Brokers";
 import Providers from "./pages/Providers";
-import Locations from "./pages/Locations";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import Quote from "./pages/Quote";
@@ -30,7 +29,6 @@ const App = () => (
           <Route path="/members" element={<Members />} />
           <Route path="/brokers" element={<Brokers />} />
           <Route path="/providers" element={<Providers />} />
-          <Route path="/locations" element={<Locations />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
           <Route path="/quote" element={<Quote />} />
