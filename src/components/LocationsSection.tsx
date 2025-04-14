@@ -1,4 +1,3 @@
-
 import React from 'react';
 import FloridaMap from './FloridaMap';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const LocationsSection = () => {
   return (
-    <section className="py-16 bg-slate-50 relative">
+    <section id="locations" className="py-16 bg-slate-50 relative">
       {/* Teal accent decoration */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-teal"></div>
       

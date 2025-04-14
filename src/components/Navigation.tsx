@@ -15,7 +15,7 @@ const Navigation = () => {
     { title: "Employers", href: "/employers" },
     { title: "Members", href: "/members" },
     { title: "Brokers", href: "/brokers" },
-    { title: "Providers", href: "/providers" },
+    { title: "Providers", href: "/#locations" },
     { title: "Resources", href: "/resources" },
     { title: "About Us", href: "/about" },
   ];
@@ -29,7 +29,6 @@ const Navigation = () => {
           </a>
         </div>
         
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link, index) => (
             <a 
@@ -45,7 +44,6 @@ const Navigation = () => {
           </Link>
         </div>
         
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-gray-700">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -53,7 +51,6 @@ const Navigation = () => {
         </div>
       </div>
       
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-white w-full py-4 px-4 shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4">
