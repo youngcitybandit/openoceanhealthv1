@@ -8,9 +8,9 @@ const Locations = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      <main className="flex-grow py-24">
+      <main className="flex-grow py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-20">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="gradient-text">Our Locations</span>
             </h1>
