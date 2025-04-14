@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 
 interface LogoProps {
   variant?: 'default' | 'white';
@@ -29,20 +28,6 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
         alt="OpenOceanHealth Logo" 
         className={`${sizeClasses.logo} ${variant === 'white' ? 'brightness-0 invert' : ''}`}
       />
-      <Button 
-        variant="ghost" 
-        className={`text-lg font-medium ${
-          variant === 'white' 
-            ? 'text-white' 
-            : 'bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent hover:from-brand-blue hover:to-brand-teal'
-        }`}
-      >
-        <img 
-          src="/lovable-uploads/9e529cbc-5a20-449d-b0df-713cd2a34e48.png" 
-          alt="OpenOceanHealth" 
-          className="h-8 object-contain"
-        />
-      </Button>
     </div>
   );
 };

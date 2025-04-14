@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -26,7 +27,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="hover:opacity-90 transition-opacity">
-            <Logo />
+            <Logo showIcon={true} />
           </a>
         </div>
         
