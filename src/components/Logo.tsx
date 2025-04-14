@@ -37,11 +37,14 @@ const Logo = ({ variant = 'default', showIcon = true, size = 'md' }: LogoProps) 
             : 'bg-gradient-to-r from-brand-teal to-brand-blue bg-clip-text text-transparent hover:from-brand-blue hover:to-brand-teal'
         }`}
       >
-        OpenOceanHealth
+        <img 
+          src="/lovable-uploads/9e529cbc-5a20-449d-b0df-713cd2a34e48.png" 
+          alt="OpenOceanHealth" 
+          className="h-8 object-contain"
+        />
       </Button>
     </div>
   );
 };
 
 export default Logo;
-
