@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -27,7 +26,7 @@ const Navigation = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
             <img 
-              src="/lovable-uploads/d0935e9d-cc9f-4d51-b74e-210ae34b051a.png" 
+              src="/lovable-uploads/c6071b3e-9ab2-41d6-b565-bd5801f0f67b.png" 
               alt="OpenOceanHealth Logo" 
               className="h-10 mr-4"
             />
