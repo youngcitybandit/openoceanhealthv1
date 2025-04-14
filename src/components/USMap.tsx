@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -57,11 +56,8 @@ const usStates = [
   { name: 'Wyoming', abbr: 'WY', position: { top: '35%', left: '35%' } },
 ];
 
-// States where the company operates (for example)
-const operatingStates = [
-  'CA', 'NY', 'TX', 'FL', 'WA', 'IL', 'MA', 'OR', 'CO', 'GA',
-  'NC', 'PA', 'OH', 'MI', 'VA', 'AZ', 'TN', 'MD', 'MN', 'WI'
-];
+// States where the company operates (only Florida)
+const operatingStates = ['FL'];
 
 const USMap = () => {
   const [hoveredState, setHoveredState] = useState<string | null>(null);
