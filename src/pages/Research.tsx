@@ -111,7 +111,7 @@ const Research = () => {
               <Link to="/quote">
                 <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-6 py-2">
                   <Mail size={16} />
-                  <span>Subscribe to our Newsletter</span>
+                  <span>Explore Benefits</span>
                 </Button>
               </Link>
             </div>

@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/quote">
               <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg rounded-full shadow-lg">
-                Get a Quote
+                Explore Benefits
               </Button>
             </Link>
             <Link to="/providers/join">

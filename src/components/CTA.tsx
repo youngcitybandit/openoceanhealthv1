@@ -18,7 +18,7 @@ const CTA = () => {
               <div>
                 <Link to="/quote">
                   <Button className="cta-gradient text-white hover:opacity-90 transition-opacity px-6 py-2">
-                    Get a Quote
+                    Explore Benefits
                   </Button>
                 </Link>
               </div>

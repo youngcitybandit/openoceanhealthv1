@@ -25,7 +25,7 @@ const Employers = () => {
                 <div className="flex flex-wrap gap-4">
                   <Link to="/quote">
                     <Button className="bg-white text-primary border border-primary hover:bg-gray-50 transition-colors px-8 py-6 text-lg">
-                      Get a Quote
+                      Explore Benefits
                     </Button>
                   </Link>
                   <Link to="/research">
