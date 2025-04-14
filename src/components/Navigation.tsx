@@ -15,8 +15,8 @@ const Navigation = () => {
     { title: "Employers", href: "/employers" },
     { title: "Members", href: "/members" },
     { title: "Brokers", href: "/brokers" },
-    { title: "Providers", href: "/#locations" },
-    { title: "Locations", href: "/#locations" },
+    { title: "Providers", href: "/providers" },
+    { title: "Locations", href: "/locations" },
     { title: "Resources", href: "/resources" },
     { title: "About Us", href: "/about" },
   ];
