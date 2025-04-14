@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { Linkedin, ExternalLink, Instagram, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -94,6 +96,13 @@ const Footer = () => {
             </div>
             
             <div className="text-gray-400 text-sm">
+              <Link to="/" className="flex items-center hover:opacity-90 transition-opacity mb-2">
+                <img 
+                  src="/lovable-uploads/97e154f3-ebcd-435e-8f0a-57d8951ee1a5.png" 
+                  alt="OpenOceanHealth Logo" 
+                  className="h-8 invert brightness-0"
+                />
+              </Link>
               &copy; {currentYear} OpenOceanHealth. All rights reserved.
             </div>
           </div>
