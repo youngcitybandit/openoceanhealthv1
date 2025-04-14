@@ -32,7 +32,10 @@ const Navigation = () => {
             />
           </Link>
           <Link to="/" className="hidden md:block">
-            <Button variant="ghost" className="text-gray-700 hover:text-brand-blue">
+            <Button 
+              variant="ghost" 
+              className="text-brand-blue hover:text-brand-teal font-bold"
+            >
               OpenOceanHealth
             </Button>
           </Link>
