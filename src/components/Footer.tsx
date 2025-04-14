@@ -98,8 +98,8 @@ const Footer = () => {
             <div className="text-gray-400 text-sm">
               <Link to="/" className="flex items-center hover:opacity-90 transition-opacity mb-2">
                 <img 
-                  src="/lovable-uploads/97e154f3-ebcd-435e-8f0a-57d8951ee1a5.png" 
-                  alt="OpenOceanHealth Logo" 
+                  src="/lovable-uploads/27a2ca61-fa58-4f46-a6b1-c754353343b1.png" 
+                  alt="Company Logo" 
                   className="h-8 invert brightness-0"
                 />
               </Link>
